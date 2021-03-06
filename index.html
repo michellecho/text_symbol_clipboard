@@ -1,0 +1,466 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Text Symbol Clipboard</title>
+  <meta name="description" content="Text Symbol Clipboard">
+  <meta name="author" content="michellecho">
+
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/@fortawesome/fontawesome-free@5.13.1/css/all.min.css" rel="stylesheet">
+  <link href="https://www.unpkg.com/uikit@3.5.4/dist/css/uikit-core.min.css" rel="stylesheet">
+  <script src="https://www.unpkg.com/uikit@3.5.4/dist/js/uikit.min.js"></script>
+</head>
+
+<body>
+  <div class="uk-container uk-container-xlarge">
+    <h1 class="uk-text-bold uk-padding-large uk-padding-remove-bottom">Text Symbol Clipboard</h1>
+    <h6 class="uk-text-muted uk-text-uppercase">Click icon to Copy</h6>
+
+    <div class="" uk-filter="target: .js-filter">
+      <ul class="uk-subnav uk-subnav-pill uk-flex-center uk-padding-small" uk-sticky>
+          <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+          <li uk-filter-control="[data-group='arrows']"><a href="#">Arrows</a></li>
+          <li uk-filter-control="[data-group='shapes']"><a href="#">Shapes</a></li>
+          <li uk-filter-control="[data-group='math']"><a href="#">Math</a></li>
+          <li uk-filter-control="[data-group='greek']"><a href="#">Greek</a></li>
+          <li uk-filter-control="[data-group='checkmark']"><a href="#">Check Marks</a></li>
+          <li uk-filter-control="[data-group='currency']"><a href="#">Currency</a></li>
+          <li uk-filter-control="[data-group='misc']"><a href="#">Miscellaneous</a></li>
+      </ul>
+
+      <div class="uk-grid uk-grid-large uk-flex-center js-filter" uk-grid="masonry: true">
+        <!-- arrows -->
+        <div data-group="arrows">
+          <div class="uk-card uk-card-body group">
+            <h3 class="uk-text-uppercase uk-text-bold">Arrows</h3>
+            <h5 class="">simple</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="left arrow">←</button>
+              <button class="tile description" title="right arrow">→</button>
+              <button class="tile description" title="up arrow">↑</button>
+              <button class="tile description" title="down arrow">↓</button>
+            </div>
+            <h5 class="">diagonal</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="NW arrow">↖</button>
+              <button class="tile description" title="NE arrow">↗</button>
+              <button class="tile description" title="SE arrow">↘</button>
+              <button class="tile description" title="SW arrow">↙</button>
+            </div>
+            <h5 class="">dotted</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="dotted left arrow">⇠</button>
+              <button class="tile description" title="dotted right arrow">⇢</button>
+              <button class="tile description" title="dotted up arrow">⇡</button>
+              <button class="tile description" title="dotted down arrow">⇣</button>
+            </div>
+            <h5 class="">hollow</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="white left arrow">⇦</button>
+              <button class="tile description" title="white right arrow">⇨</button>
+              <button class="tile description" title="white up arrow">⇧</button>
+              <button class="tile description" title="white down arrow">⇩</button>
+            </div>
+            <h5 class="">filled</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="black left arrow">⬅</button>
+              <button class="tile description" title="black right arrow">⮕</button>
+              <button class="tile description" title="black up arrow">⬆</button>
+              <button class="tile description" title="black down arrow">⬇</button>
+            </div>
+          </div>
+        </div>
+        <!-- shapes -->
+        <div data-group="shapes">
+          <div class="uk-card uk-card-body group">
+            <h3 class="uk-text-uppercase uk-text-bold">Shapes</h3>
+            <h5 class="">circle</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="black circle">●</button>
+              <button class="tile description" title="white circle">○</button>
+              <button class="tile description" title="circled cross">⊗</button>
+              <button class="tile description" title="circled bullet">⦿</button>
+            </div>
+            <h5 class="">square</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="black small square">▪</button>
+              <button class="tile description" title="black square">■</button>
+              <button class="tile description" title="black medium square">◼</button>
+              <button class="tile description" title="black large square">⬛</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="white small square">▫</button>
+              <button class="tile description" title="white square">□</button>
+              <button class="tile description" title="white medium square">◻</button>
+              <button class="tile description" title="white large square">⬜</button>
+            </div>
+            <h5 class="">triangle</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="black left triangle">◀</button>
+              <button class="tile description" title="black right triangle">▶</button>
+              <button class="tile description" title="black up triangle">▲</button>
+              <button class="tile description" title="black down triangle">▼</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="white left triangle">◁</button>
+              <button class="tile description" title="white right triangle">▷</button>
+              <button class="tile description" title="white up triangle">△</button>
+              <button class="tile description" title="white down triangle">▽</button>
+            </div>
+            <h5 class="">dash</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="figure dash">‒</button>
+              <button class="tile description" title="en dash">–</button>
+              <button class="tile description" title="em dash">—</button>
+              <button class="tile description" title="horizontal bar">―</button>
+            </div>
+          </div>
+        </div>
+        <!-- math -->
+        <div data-group="math">
+          <div class="uk-card uk-card-body group">
+            <h3 class="uk-text-uppercase uk-text-bold">Math</h3>
+            <h5 class="">core</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="plus">+</button>
+              <button class="tile description" title="minus">−</button>
+              <button class="tile description" title="multiply">×</button>
+              <button class="tile description" title="divide">÷</button>
+            </div>
+            <h5 class="">comparison</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="less than"><</button>
+              <button class="tile description" title="greater than">></button>
+              <button class="tile description" title="less than or equal to">≤</button>
+              <button class="tile description" title="greater than or equal to">≥</button>
+            </div>
+            <h5 class="">equality</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="approximately equal">≈</button>
+              <button class="tile description" title="not equal">≠</button>
+              <button class="tile description" title="plus minus">±</button>
+              <button class="tile description" title="minus plus">∓</button>
+            </div>
+            <h5 class="">power</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="nth power">ⁿ</button>
+              <button class="tile description" title="power of 1">¹</button>
+              <button class="tile description" title="squared">²</button>
+              <button class="tile description" title="cubed">³</button>
+            </div>
+            <h5 class="">set</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="intersection">∩</button>
+              <button class="tile description" title="union">∪</button>
+              <button class="tile description" title="subset">⊂</button>
+              <button class="tile description" title="superset">⊃</button>
+            </div>
+            <h5 class="">calculus</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="integral">∫</button>
+              <button class="tile description" title="partial derivative">∂</button>
+              <button class="tile description" title="delta">δ</button>
+              <button class="tile description" title="infinity">∞</button>
+            </div>
+            <h5 class="">dots</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="therefore">∴</button>
+              <button class="tile description" title="because">∵</button>
+              <button class="tile description" title="ellipsis">⋯</button>
+              <button class="tile description" title="vertical ellipsis">⋮</button>
+            </div>
+            <h5 class="">other</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="square root">√</button>
+              <button class="tile description" title="angle">∠</button>
+              <button class="tile description" title="sum">∑</button>
+              <button class="tile description" title="function">ƒ</button>
+            </div>
+          </div>
+        </div>
+        <!-- greek upper case -->
+        <div data-group="greek">
+          <div class="uk-card uk-card-body group">
+            <h3 class="uk-text-uppercase uk-text-bold">Greek</h3>
+            <h5 class="">upper case</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="alpha">Α</button>
+              <button class="tile description" title="beta">Β</button>
+              <button class="tile description" title="gamma">Γ</button>
+              <button class="tile description" title="delta">Δ</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="epsilon">Ε</button>
+              <button class="tile description" title="zeta">Ζ</button>
+              <button class="tile description" title="eta">Η</button>
+              <button class="tile description" title="theta">Θ</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="iota">Ι</button>
+              <button class="tile description" title="kappa">Κ</button>
+              <button class="tile description" title="lambda">Λ</button>
+              <button class="tile description" title="mu">Μ</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="nu">Ν</button>
+              <button class="tile description" title="xi">Ξ</button>
+              <button class="tile description" title="omicron">Ο</button>
+              <button class="tile description" title="pi">Π</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="rho">Ρ</button>
+              <button class="tile description" title="sigma">Σ</button>
+              <button class="tile description" title="tau">Τ</button>
+              <button class="tile description" title="upsilon">Υ</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="phi">Φ</button>
+              <button class="tile description" title="chi">Χ</button>
+              <button class="tile description" title="psi">Ψ</button>
+              <button class="tile description" title="omega">Ω</button>
+            </div>
+          </div>
+        </div>
+        <!-- greek lower case -->
+        <div data-group="greek">
+          <div class="uk-card uk-card-body group">
+            <h3 class="uk-text-uppercase uk-text-bold">Greek</h3>
+            <h5 class="">lower case</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="alpha">α</button>
+              <button class="tile description" title="beta">β</button>
+              <button class="tile description" title="gamma">γ</button>
+              <button class="tile description" title="delta">δ</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="epsilon">ε</button>
+              <button class="tile description" title="zeta">ζ</button>
+              <button class="tile description" title="eta">η</button>
+              <button class="tile description" title="theta">θ</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="iota">ι</button>
+              <button class="tile description" title="kappa">κ</button>
+              <button class="tile description" title="lambda">λ</button>
+              <button class="tile description" title="mu">μ</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="nu">ν</button>
+              <button class="tile description" title="xi">ξ</button>
+              <button class="tile description" title="omicron">ο</button>
+              <button class="tile description" title="pi">π</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="rho">ρ</button>
+              <button class="tile description" title="sigma">σ</button>
+              <button class="tile description" title="tau">τ</button>
+              <button class="tile description" title="upsilon">υ</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="phi">φ</button>
+              <button class="tile description" title="chi">χ</button>
+              <button class="tile description" title="psi">ψ</button>
+              <button class="tile description" title="omega">ω</button>
+            </div>
+          </div>
+        </div>
+        <!-- checkmark -->
+        <div data-group="checkmark">
+          <div class="uk-card uk-card-body group">
+            <h3 class="uk-text-uppercase uk-text-bold">check marks</h3>
+            <h5 class="">tick mark</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="check mark">✓</button>
+              <button class="tile description" title="heavy check mark">✔</button>
+              <button class="tile description" title="ballot check mark">☑</button>
+              <button class="tile description" title="square root">√</button>
+            </div>
+            <h5 class="">x mark</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="x mark">✗</button>
+              <button class="tile description" title="heavy x mark">✘</button>
+              <button class="tile description" title="ballot x mark">☒</button>
+              <button class="tile description" title="heavy multiplication x">✖</button>
+            </div>
+          </div>
+        </div>
+        <!-- currency -->
+        <div data-group="currency">
+          <div class="uk-card uk-card-body group">
+            <h3 class="uk-text-uppercase uk-text-bold">Currency</h3>
+            <h5 class="">common</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="dollar">$</button>
+              <button class="tile description" title="pound">£</button>
+              <button class="tile description" title="euro">€</button>
+              <button class="tile description" title="yen">¥</button>
+            </div>
+            <h5 class="">extended</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="afghani">؋</button>
+              <button class="tile description" title="baht">฿</button>
+              <button class="tile description" title="cedi">₵</button>
+              <button class="tile description" title="colon">₡</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="dong">₫</button>
+              <button class="tile description" title="dram">֏</button>
+              <button class="tile description" title="florin">ƒ</button>
+              <button class="tile description" title="franc">₣</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="guarani">₲</button>
+              <button class="tile description" title="hryvnia">₴</button>
+              <button class="tile description" title="lari">₾</button>
+              <button class="tile description" title="kip">₭</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="lira">₺</button>
+              <button class="tile description" title="manat">₼</button>
+              <button class="tile description" title="naira">₦</button>
+              <button class="tile description" title="peso">₱</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="renminbi">元</button>
+              <button class="tile description" title="rial">﷼</button>
+              <button class="tile description" title="riel">៛</button>
+              <button class="tile description" title="ruble">₽</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="rupiah">Rp</button>
+              <button class="tile description" title="rupee">₨</button>
+              <button class="tile description" title="indian rupee">₹</button>
+              <button class="tile description" title="shekel">₪</button>
+            </div>
+            <h5 class=""></h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="taka">৳</button>
+              <button class="tile description" title="tenge">₸</button>
+              <button class="tile description" title="tugrik">₮</button>
+              <button class="tile description" title="won">₩</button>
+            </div>
+          </div>
+        </div>
+        <!-- business -->
+        <div data-group="misc">
+          <div class="uk-card uk-card-body group">
+            <h3 class="uk-text-uppercase uk-text-bold">business</h3>
+            <h5 class="">trademark</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="copyright">©</button>
+              <button class="tile description" title="registered">®</button>
+              <button class="tile description" title="trade mark">™</button>
+              <button class="tile description" title="service mark">℠</button>
+            </div>
+          </div>
+        </div>
+        <!-- weather -->
+        <div data-group="misc">
+          <div class="uk-card uk-card-body group">
+            <h3 class="uk-text-uppercase uk-text-bold">weather</h3>
+            <h5 class="">temperature</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="degree">°</button>
+              <button class="tile description" title="celsius">℃</button>
+              <button class="tile description" title="fahrenheit">℉</button>
+              <button class="tile description" title="kelvin">K</button>
+            </div>
+          </div>
+        </div>
+        <!-- fun -->
+        <div data-group="misc">
+          <div class="uk-card uk-card-body group">
+            <h3 class="uk-text-uppercase uk-text-bold">fun</h3>
+            <h5 class="">music</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="note">♪</button>
+              <button class="tile description" title="sharp">♯</button>
+              <button class="tile description" title="flat">♭</button>
+              <button class="tile description" title="natural">♮</button>
+            </div>
+            <h5 class="">suit</h5>
+            <div class="uk-flex-inline">
+              <button class="tile description" title="spade">♠</button>
+              <button class="tile description" title="heart">♥</button>
+              <button class="tile description" title="club">♣</button>
+              <button class="tile description" title="diamond">♦</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-text-light">
+    Weekend Project
+    <i class="far fa-lightbulb"></i> by 
+    <a class="uk-link-reset uk-text-bold" href="http://michellecho.me/" target="_blank">Michelle Cho</a>
+  </div>
+
+  <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+  <script>
+    var tiles = document.querySelectorAll('.tile');
+    for (var i = 0; i < tiles.length; i++) {
+      tiles[i].addEventListener('mouseleave', clearTooltip);
+      tiles[i].addEventListener('blur', clearTooltip);
+    }
+
+    function clearTooltip(e) {
+      e.currentTarget.setAttribute('class', 'tile description');
+      e.currentTarget.removeAttribute('aria-label');
+    }
+
+    function showTooltip(elem, msg) {
+      elem.setAttribute('class', 'tile tooltip');
+      elem.setAttribute('aria-label', msg);
+    }
+
+    // var clipboard = new ClipboardJS('.tile');
+    var clipboard = new ClipboardJS('.tile', {
+      text: function(trigger) {
+        return trigger.innerText;
+      }
+    });
+
+    clipboard.on('success', function(e) {
+      console.log(e);
+      e.clearSelection();
+      console.info('Action:', e.action);
+      console.info('Text:',e.text);
+      console.info('Trigger:',e.trigger);
+
+      showTooltip(e.trigger,'Copied!');
+      console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+      // console.log(e);
+      console.error('Action:',e.action);
+      console.error('Trigger:',e.trigger);
+      showTooltip(e.trigger,"Couldn't Copy!");
+    });
+  </script>
+
+</body>
+</html>
